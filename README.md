@@ -1,6 +1,6 @@
 # My C++ Learning & Practice Projects 🧪
 
-Hey! Welcome to my GitHub. I am nearly 14 and learning C++ from scratch. This repository is my personal sandbox where I test code out while watching tutorials (like TheCherno's C++ playlist) to figure out how the language works. 
+Hey! Welcome to my GitHub. I am nearly 14 (in 5 months) and learning C++ from scratch. This repository is my personal sandbox where I test code out while watching tutorials (like TheCherno's C++ playlist) to figure out how the language works. 
 
 My big goal is to learn enough low-level coding to build my own 3D game engine from scratch and eventually get a job at a studio like Rockstar Games. 
 
