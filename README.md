@@ -15,6 +15,7 @@ My big goal is to learn enough low-level coding to build my own 3D game engine f
 *   **`/destructors`** - An isolated lab file where I was testing explicit object lifetimes and seeing when destructors actually trigger in memory.
 *   **`/logger for c++`** - A basic console printing script I put together to practice custom logging formats.
 *   **`/testingEnums`** - A project where I was messing around with Enums to see how they map out in code logic.
+*   more..
 
 ---
 
