@@ -21,4 +21,4 @@ My big goal is to learn enough low-level coding to build my own 3D game engine f
 ## 🛠️ How I manage this repo:
 - **Language:** C++
 - **IDE:** Visual Studio
-- **Clean Repo:** I intentionally excluded all the annoying Visual Studio project meta-files (`.vs`, `.sln`, `.vcxproj`) using a `.gitignore` so that only my raw `.cpp` and `.h` code files show up here. 
+- **Clean Repo:** I intentionally excluded all the annoying Visual Studio project meta-files (`.vs`, `.sln`, `.vcxproj`) so that only my raw `.cpp` and `.h` code files show up here. 
