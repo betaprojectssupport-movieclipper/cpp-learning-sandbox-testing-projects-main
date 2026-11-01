@@ -1,0 +1,14 @@
+################################
+Welcome User to the one and only
+        IDIOT PROGRAM
+################################
+
+
+(1) Calculate Area of A Circle by the Radius Way [πr²]
+(2) Calculate Area of A Circle by the Diameter Way [πd]
+(3) Calculate Area of A Circle by the Circumfrence Way [C² / (4π)]
+
+(4) Calculate the area of a Triangle by (Base * Height) / 2  [½(b×h)]
+(5) Calculate the area of a Square by Base * Height
+
+Select operation to proceed with:
