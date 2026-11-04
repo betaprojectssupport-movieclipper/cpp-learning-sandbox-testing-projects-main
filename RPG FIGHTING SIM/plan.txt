@@ -1,0 +1,8 @@
+rpg fighting sim
+
+you have 5 weapons to choose: fists, sword, bow and arrow, dagger, ak47
+structured like this "I fight with my" << weaponname
+
+multiple enemies you can fight: goblin skeleton, they can hit you with a preset weapon for a random number
+chat is like this >
+also you can do /help
