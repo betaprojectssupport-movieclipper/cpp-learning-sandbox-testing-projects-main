@@ -17,4 +17,8 @@ namespace Log
     {
         std::cout << "[ERROR]: " << message << '\n';
     }
+    inline void LogPos(float x, float y, float z) // i hope this works i made this for no reason at 10pm in github and didnt test it.
+    {
+        std::cout << "[INFO]:    X: " << x << ", Y: " << y << ", Z: " << z <<'\n';
+    }
 }
