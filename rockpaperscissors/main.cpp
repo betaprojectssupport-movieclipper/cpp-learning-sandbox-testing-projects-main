@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "base1.h"
-
+// please note this is a really shit/simple implomentation i made in like 2 hrs
 static void initGame(int& userWins, int& cpuWins, int& iDraws);
 
 int main()
