@@ -2,8 +2,6 @@
 #include <string>
 #include "base1.h"
 // please note this is a really shit/simple implomentation i made in like 2 hrs
-// please not that the selection when the user selects rock paper or scissers it is
-// like 1 down idk and im too lazy to fix this
 // i made this for fun whilst learning..
 static void initGame(int& userWins, int& cpuWins, int& iDraws);
 
@@ -36,7 +34,7 @@ void initGame(int& userWins, int& cpuWins, int& iDraws)
 	else { exit(0); }
 
 	std::cin >> ans;
-	sPcName = (ans == 0) ? "Rock" : (ans == 1) ? "Paper" : "Scissors";
+	sPcName = (ans == 1) ? "Rock" : (ans == 2) ? "Paper" : "Scissors";
 	print3(sPcName, sCpuName, userWins, cpuWins, iDraws);
 	print4();
 	std::cin >> cAns;
