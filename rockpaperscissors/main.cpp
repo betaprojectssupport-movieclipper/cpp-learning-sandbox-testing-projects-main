@@ -2,6 +2,9 @@
 #include <string>
 #include "base1.h"
 // please note this is a really shit/simple implomentation i made in like 2 hrs
+// please not that the selection when the user selects rock paper or scissers it is
+// like 1 down idk and im too lazy to fix this
+// i made this for fun whilst learning..
 static void initGame(int& userWins, int& cpuWins, int& iDraws);
 
 int main()
