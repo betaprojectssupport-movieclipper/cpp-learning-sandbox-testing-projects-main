@@ -19,15 +19,11 @@ void initGame(int& userWins, int& cpuWins, int& iDraws)
 	// initialises all the variables
 	srand(time(NULL));
 	int cpu = rand() % 3;
-
 	std::string sPcName; // just shows if rock paper or scissors
 	std::string sCpuName = (cpu == 0) ? "Rock" : (cpu == 1) ? "Paper" : "Scissors";
 	int ans = 0;
 	char cAns;
-
 	// main part
-
-
 	print1();
 	std::cin >> ans;
 	if (ans != 2) { print2(); }
