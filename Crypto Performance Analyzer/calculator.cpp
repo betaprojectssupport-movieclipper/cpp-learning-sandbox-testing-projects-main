@@ -23,20 +23,14 @@ void beginprocess()
         return;
     }
 
-    switch (type)
-    {
-    case 1:
+    if (type == 1) {
         calc_now();
-        break;
-    case 2:
+    } else if (type == 2) {
         calc_month();
-        break;
-    case 3:
+    } else if (type == 3) {
         calc_year();
-        break;
-    default:
+    } else {
         std::cout << "\nInvalid selection. Please choose 1, 2, or 3.\n";
-        break;
     }
 }
 
