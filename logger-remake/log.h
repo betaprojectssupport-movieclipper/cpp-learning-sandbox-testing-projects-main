@@ -7,7 +7,7 @@ namespace engine
 	namespace log
 	{
 		template<typename T>
-		void print(const T& value) // Optimized for strings/objects
+		void print(const T& value)
 		{
 #ifndef NDEBUG
 			std::cout << "[INFO]: " << value << "\n";
@@ -15,7 +15,7 @@ namespace engine
 		}
 
 		template<typename T>
-		void printloc(T x, T y, T z) // Kept by value (best for float/int coordinates)
+		void printloc(T x, T y, T z)  // no touching
 		{
 #ifndef NDEBUG
 			std::cout << "[INFO]: X: " << x << " Y: " << y << " Z: " << z << "\n";
@@ -23,7 +23,7 @@ namespace engine
 		}
 
 		template<typename T>
-		void warn(const T& msg) // Optimized for strings/objects
+		void warn(const T& msg)
 		{
 #ifndef NDEBUG
 			std::cout << "[WARN]: " << msg << "\n";
