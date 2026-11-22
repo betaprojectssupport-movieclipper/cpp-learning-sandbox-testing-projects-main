@@ -2,16 +2,25 @@
 #include <iostream>
 // btw i structured it like this with the engine namespace so its easier to work with
 // why c++ why...
+
 namespace engine
 {
 	// logger
 	namespace log
 	{
+#ifndef NDEBUG
+		constexpr const char* WHITE = "\033[97m";
+		constexpr const char* YELLOW = "\033[93m";
+		constexpr const char* RED = "\033[31m";
+		constexpr const char* RESET = "\033[0m";
+
+#endif
+
 		template<typename T>
 		void print(const T& value)
 		{
 #ifndef NDEBUG
-			std::cout << "[INFO]: " << value << "\n";
+			std::cout << WHITE << "[INFO]: " << value << WHITE << "\n";
 #endif
 		}
 
@@ -19,7 +28,7 @@ namespace engine
 		void printloc(T x, T y, T z)
 		{
 #ifndef NDEBUG
-			std::cout << "[INFO]: X: " << x << " Y: " << y << " Z: " << z << "\n";
+			std::cout << WHITE << "[INFO]: X: " << x << " Y: " << y << " Z: " << z << RESET << "\n";
 #endif
 		}
 
@@ -27,7 +36,15 @@ namespace engine
 		void warn(const T& msg)
 		{
 #ifndef NDEBUG
-			std::cout << "[WARN]: " << msg << "\n";
+			std::cout << YELLOW << "[WARN]: " << msg << RESET << "\n";
+#endif
+		}
+
+		template<typename T>
+		void error(const T& msg)
+		{
+#ifndef NDEBUG
+			std::cout << RED << "[ERROR]: " << msg << RESET << "\n";
 #endif
 		}
 	}
@@ -42,7 +59,7 @@ namespace engine
 		constexpr float HALF_PI = PI * 0.5f; // 1/4 cirlce (90 Degrees)
 		float dt = 0.0166667f; // base set for 60fps 
 
-		constexpr float setDt(float fps) { dt = 1.0f / fps; }
+		constexpr void setDt(float fps) { dt = 1.0f / fps; }
 		constexpr float toRadians(float degrees) { return degrees * (PI / 180.0f); }
 		constexpr float toDegrees(float radians) { return radians * (180.0f / PI); }
 		constexpr float lerp(float a, float b, float t) { return a + (b - a) * t; }
