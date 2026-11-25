@@ -1,6 +1,21 @@
 #pragma once
 #include <iostream>
 // btw i structured it like this with the engine namespace so its easier to work with
+// INFORMATION: after asking github copilot to make a stress test with the program it performed wonderfully you can see the results below
+
+/* [INFO]: === LOS SANTOS BENCHMARK STRESS TEST ===
+[WARN]: Lost a wanted star! Evading LSPD...
+[WARN]: Lost a wanted star! Evading LSPD...
+[WARN]: Lost a wanted star! Evading LSPD...
+[INFO]: === SIMULATION SUMMARY ===
+[INFO]: X: 0 Y: 0 Z: 1499.92
+[INFO]: 14.9999
+[INFO]: 12
+[INFO]: 0
+[INFO]: 6950
+[INFO]: === REAL-WORLD EXECUTION TIME (MILLISECONDS) ===
+[INFO]: 7.0501 */
+
 // why c++ why...
 
 namespace engine
